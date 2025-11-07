@@ -171,6 +171,35 @@ main h2 {
 }
 
 
+/* one page */
+
+    
+#onepage .container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+} 
+
+
+     #onepage {
+        padding: 50px 10px 50px 10px;
+    }
+     #onepage p {
+        padding: 25px;
+    }
+
+    #video iframe {
+        width: 350px;
+        height: 350px;    }
+
+
+    
+
+
+
+
+
 
 
 /* Fim - Smartphone Portrait <<<<<<< */
@@ -224,8 +253,13 @@ main h2 {
         margin: 0px 50px 0px 0px;
     }
 
-    
-    
+    #video iframe {
+        width: 450px;
+        height: 250px;
+     }
+
+
+
 }
 
 
@@ -248,6 +282,14 @@ main h2 {
 
     main h2 {
         font-size: 3rem;
+    }
+
+    section p {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 2.5rem;
     }
 }
 
@@ -303,7 +345,7 @@ main h2 {
     }
 
     nav ul li a:hover {
-        color: var(--dourado);
+        color: var(--dourado)
     }
 
     main {
@@ -320,10 +362,42 @@ main h2 {
         width: 400px;
         height: 400px;
     }
-    
+
+    section p {
+        font-size: 1.5rem;
+    }
+
+    section h2 {
+        font-size: 2.5rem;
+    }
+
+    /* one page */
+
+    #onepage {
+        padding: 50px 10px 50px 10px;
+    }
+
+    #onepage .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #onepage p {
+        padding: 25px;
+    }
 
     
 }
+
+    
+        
+        
+
+
+
+
+
+    
 
 
 
