@@ -41,6 +41,34 @@ body {
     border: 2px solid var(--branco)
 }
 
+/* Cartão */
+.card {
+    width: 341px;
+    height: 520px;
+    background-color: var(--cinzaClaro);
+    margin-bottom: 25px;
+    border: 2px solid var(--azulClaro);
+    text-align: center;
+}
+
+
+.card h2 {
+    font-size: 1.3rem;
+    margin: 15px 0px;
+}
+
+.card p {
+    color: var(--cinzaEscuro);
+    text-align: left;
+    padding: 0px 15px 30px 15px;
+}
+
+address #whats {
+    font-size: 1.7rem;
+}
+
+
+
 /* Fim - Layout <<<<<<<<<<<<<<<<<<<< */
 
 
@@ -188,6 +216,11 @@ main h2 {
 
 #onepage p {
     padding: 25px;
+    text-align: center;
+}
+
+#onepage h2 {
+    text-align: center;
 }
 
 #video iframe {
@@ -208,13 +241,16 @@ main h2 {
 
 
 #textofaixa h2 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     color: var(--dourado);
+    text-align: center;
 }
 
 #textofaixa p {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     color: var(--cinzaClaro);
+    text-align: center;
+    margin: 30px;
 
 }
 
@@ -234,9 +270,158 @@ main h2 {
     color: var(--branco);
     border-radius: 25px;
     border: 2px solid var(--branco);
+    display: block;
+    margin: 0 auto;
+    /* centraliza */
+    width: fit-content;
+}
+
+/* Cartões */
+#montagem {
+    background-color: var(--roxo);
+    padding: 50px 0px 25px 0px;
+}
+
+#montagem .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#montagem .btn {
+    box-shadow: none;
+    width: 240px;
+    justify-content: center;
+}
+
+/* rodapé */
+
+address {
+    padding: 30px 10px 15px 20px;
+    background-color: var(--cinzaMedio);
+    color: var(--branco);
+}
+
+
+address .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#contato,
+#endereco,
+#googleMaps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+#contato a,
+#endereco a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--branco);
+}
+
+
+address img {
+    width: 36px;
+    height: 36px;
+    padding-top: 2px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+#iconelocal {
+    display: none;
+}
+
+
+#googleMaps iframe {
+    display: none;
+}
+
+#social img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*  FOOTER  */
+footer {
+    background-color: var(--cinzaClaro);
+    color: var(--preto);
+    padding: 10px px;
+}
+
+footer .container {
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
     
 
 }
+
+.container.Flex5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    width: 100%;
+    padding: 15px 0;
+}
+
+#contato iframe {
+    display: none;
+}
+
+#contato .container {
+    flex-direction: column;
+}
+
+#contato {
+    background-position: center;
+    background-size: cover;
+    font-family: "Lato", sans-serif;
+    font-weight: 90;
+}
+
+#bloco2 {
+    margin: 10px 0px 0px 20px;
+}
+
+#bloco2 img {
+    margin: 5px 0px;
+}
+
+#iconloc {
+    display: none;
+}
+
+#contato img {
+    align-items: center;
+    width: 35px;
+    height: 35px;
+}
+
+#bloco3 {
+    margin: 10px 0px 20px 20px;
+}
+
+#bloco3 img {
+    margin: 7px 0px;
+}
+
+
+
+
+
+
 
 
 
@@ -298,6 +483,94 @@ main h2 {
         height: 250px;
     }
 
+     /*  RODAPÉ  */
+    address {
+        padding: 30px 10px 15px 20px;
+        background-color: var(--cinzaMedio);
+        color: var(--branco);
+    }
+
+
+    address .container {
+        
+    flex-direction: column;
+
+    }
+
+
+    #contato,
+    #endereco,
+    #googleMaps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+
+    #contato a,
+    #endereco a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--branco);
+    }
+
+
+    address img {
+        width: 36px;
+        height: 36px;
+        padding-top: 2px;
+    }
+
+
+    #contato p,
+    #endereco p {
+        margin: 4px 0;
+    }
+
+
+    #googleMaps iframe {
+        border-radius: 8px;
+        width: 300px;
+        height: 200px;
+    
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: var(--cinzaMedio);
+        color: var(--preto);
+        padding: 30px 20px;
+        align-items: center;
+    }
+
+    footer .container {
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    #social img {
+        width: 30px;
+        height: 30px;
+        margin-bottom: 25px;
+
+    }
+
+    #rodape {
+    background-color: var(--cinzaEscuro);
+        background-attachment: fixed;
+        padding: 50px 10px;
+        align-items: center;
+}
+
+ #qrcode {
+        margin-left: 20px;
+    }
+
 
 
 }
@@ -331,6 +604,21 @@ main h2 {
     section h2 {
         font-size: 2.5rem;
     }
+    /* Rodapé */
+ #rodape iframe {
+    display: flex;
+    margin: 20px;
+ }
+
+ 
+ #iconemapa .container {
+    display: none;
+ }
+
+ address {
+    padding: 30px 10px 15px 20px;
+    background-color: var(--cinzaEscuro);
+}
 }
 
 /* Fim - Tablet Portrait <<<<<<<<<<< */
@@ -343,6 +631,74 @@ main h2 {
     .container {
         max-width: 960px;
     }
+
+    /* Cartões */
+    #montagem .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card {
+        margin-right: 25px;
+    }
+
+    /* rpdape */
+
+    address {
+        padding: 30px 10px 15px 20px;
+        background-color: var(--verdeclarinho);
+        color: var(--branco);
+    }
+
+    address .container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #contato,
+    #endereco,
+    #googleMaps {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+
+
+    address img {
+        width: 36px;
+        height: 36px;
+        padding-top: 2px;
+    }
+
+
+    #contato p,
+    #endereco p {
+        margin: 1px 0;
+
+    }
+
+
+    #googleMaps iframe {
+        border-radius: 8px;
+        width: 300px;
+        height: 200px;
+    }
+
+
+
+    .container.Flex5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+     
+
 }
 
 /* Fim - Tablet Landscape <<<<<<<<<< */
@@ -430,12 +786,37 @@ main h2 {
 
     #cardapio {
         background-attachment: fixed;
-        padding: 50px 10px;
+        padding: 90px 300px;
         align-items: center;
 
     }
 
+
+    /* Cartões */
+    .card {
+        margin-right: 0;
+    }
+
+     #social img {
+    width: 50px;
+    height: 50px;
 }
+
+
+#rodape {
+    background-color: var(--cinzaEscuro);
+        background-attachment: fixed;
+        padding: 50px 10px;
+        align-items: center;
+}
+
+.contato {
+    font-size: 9rem;
+}
+
+
+}
+
 
 
 
